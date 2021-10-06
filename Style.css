@@ -32,18 +32,19 @@ ul {
   }
   body {
       
-    background-image: url('images/bg.JFIF');
+    
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 60%;
     
   }
-  #h1{
+  #h1{ background-image: url('images/bg.JFIF');
     text-align: center; 
     color:white;
     font-size:19px;
   }
   #h2{
+   
     text-align: center; 
      color:white;
     font-size:16px;
@@ -70,16 +71,9 @@ ul {
     margin: 4px 2px;
     cursor: pointer;
   }
-  #body2{
-      
-    background-image: url('images/pear.PNG');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 90%;
-    
-  }
-  * {box-sizing: border-box}
-  body {font-family: Verdana, sans-serif; margin:0;background-image:url('images/bg.JFIF';)}
+  #Container{ background-image: url('images/Pear.jpg');
+   box-sizing: border-box;}
+  body {font-family: Verdana, sans-serif; margin:0;}
   
   /* Slideshow container */
   .slideshow-container {
@@ -152,3 +146,20 @@ ul {
   /* Add a blue color to the author */
   .author {color: cornflowerblue;}
   
+
+  #Companies
+      
+      .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+      }
+      
+      /* Clearfix (clear floats) */
+      .row::after {
+        content: "";
+        clear: both;
+        display: none;
+      }
+    
+    
