@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FRUIT ALLEY SUPERMARKET</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<div id ="header">
+ <h1>info@fruitalleysupermarket.co.za</h1> 
+ </div>
+</header>
+<div id ="nav">
+<ul>
+   <img src="images/LOGO.PNG" width=150 height=80/>
+  <li><a href="Donate.html">Donate/Support</a></li>
+  <li><a href="Product.html">Products</a></li>
+  <li><a href="ContactUs.html">Contact Us</a></li>
+  <li><a href="AboutUs.html">About Us</a></li>
+  <li><a href="index.html">Home</a></li>
+</ul>
+</div>
+<div id="h1">
+<h1>WELCOME TO FRUIT ALLEY </h1>
+<h1>SUPERMARKET</h1>
+</div>
+<div id="h2">
+<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+<h2>Vulputate eu scelerisque felis imperdiet proin fermentum leo vel.</h2>
+<h2>Risus viverra adipiscing at in tellus integer feugiat.<br>
+<a href="AboutUs.html" class="button">About Us</a></button>
+<button class="button2">Get involved</button></h2>
+</div>
+</div>
+</div>
+</div>
+<br>
+<br>
+</div>
+<div class="slideshow-container">
+<div class="mySlides">
+  <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+  <p class="author">- John Keats</p>
+</div>
+
+<div class="mySlides">
+  <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+  <p class="author">- Ernest Hemingway</p>
+</div>
+
+<div class="mySlides">
+  <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+  <p class="author">- Thomas A. Edison</p>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+</div>
+</body>
+</html>
